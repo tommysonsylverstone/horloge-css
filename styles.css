@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rond {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("horloge-background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* https://mademyday.de/height-equals-width-with-pure-css/ https://stackoverflow.com/a/44189622/15107807 */
+.rond::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.centre {
+    width: 1px;
+    height: 1px;
+    position: relative;
+}
+
+.seconde {
+    width: 130px;
+    height: 1px;
+    background-color: black;
+    animation: 60s secondes infinite;
+    animation-timing-function: steps(60, end);
+    transform-origin: left;
+    position: absolute;
+    z-index: 3;
+}
+
+.seconde::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: -20px;
+    background-color: black;
+}
+
+.minute {
+    width: 110px;
+    height: 3px;
+    background-color: grey;
+    transform-origin: left;
+    animation: 3600s minutes infinite;
+    animation-timing-function: steps(60, end);
+    position: absolute;
+    top: -1px;
+    z-index: 2;
+}
+
+.minute::before {
+    content: '';
+    width: 20px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: -20px;
+    background-color: gray;
+}
+
+.heure {
+    width: 80px;
+    height: 5px;
+    background-color: darkgray;
+    transform-origin: left;
+    animation: 43200s heures infinite linear; /*43200 for 12 hours */
+    position: absolute;
+    top: -2px;
+    z-index: 1;
+}
+
+.heure::before {
+    content: '';
+    width: 20px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: -20px;
+    background-color: darkgray;
+}
+
+@keyframes secondes {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes minutes {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes heures {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
