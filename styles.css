@@ -20,6 +20,7 @@
     background-image: url("horloge-background.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 /* https://mademyday.de/height-equals-width-with-pure-css/ https://stackoverflow.com/a/44189622/15107807 */
@@ -27,12 +28,6 @@
     content: '';
     display: block;
     padding-bottom: 100%;
-}
-
-.centre {
-    width: 1px;
-    height: 1px;
-    position: relative;
 }
 
 .seconde {
@@ -64,7 +59,6 @@
     animation: 3600s minutes infinite;
     animation-timing-function: steps(60, end);
     position: absolute;
-    top: -1px;
     z-index: 2;
 }
 
@@ -85,7 +79,6 @@
     transform-origin: left;
     animation: 43200s heures infinite linear; /*43200 for 12 hours */
     position: absolute;
-    top: -2px;
     z-index: 1;
 }
 
@@ -99,6 +92,7 @@
     background-color: darkgray;
 }
 
+/*
 @keyframes secondes {
     0% {
         transform: rotate(-90deg);
