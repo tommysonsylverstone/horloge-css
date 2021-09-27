@@ -31,7 +31,7 @@
 }
 
 .seconde {
-    width: 130px;
+    width: 40%;
     height: 1px;
     background-color: black;
     animation: 60s secondes infinite;
@@ -45,11 +45,11 @@
 
 .seconde::before {
     content: '';
-    width: 20px;
+    width: 17%;
     height: 1px;
     display: block;
     position: absolute;
-    left: -20px;
+    left: -17%;
     background-color: black;
 }
 
