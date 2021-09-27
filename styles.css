@@ -38,6 +38,8 @@
     animation-timing-function: steps(60, end);
     transform-origin: left;
     position: absolute;
+    left: 50%;
+    top: 50%;
     z-index: 3;
 }
 
@@ -92,7 +94,7 @@
     background-color: darkgray;
 }
 
-/*
+
 @keyframes secondes {
     0% {
         transform: rotate(-90deg);
