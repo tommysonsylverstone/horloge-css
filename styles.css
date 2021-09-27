@@ -54,43 +54,47 @@
 }
 
 .minute {
-    width: 110px;
+    width: 35%;
     height: 3px;
     background-color: grey;
     transform-origin: left;
     animation: 3600s minutes infinite;
     animation-timing-function: steps(60, end);
     position: absolute;
+    left: 50%;
+    top: 50%;
     z-index: 2;
 }
 
 .minute::before {
     content: '';
-    width: 20px;
+    width: 20%;
     height: 3px;
     display: block;
     position: absolute;
-    left: -20px;
+    left: -20%;
     background-color: gray;
 }
 
 .heure {
-    width: 80px;
+    width: 27%;
     height: 5px;
     background-color: darkgray;
     transform-origin: left;
     animation: 43200s heures infinite linear; /*43200 for 12 hours */
     position: absolute;
+    left: 50%;
+    top: 50%;
     z-index: 1;
 }
 
 .heure::before {
     content: '';
-    width: 20px;
+    width: 25%;
     height: 5px;
     display: block;
     position: absolute;
-    left: -20px;
+    left: -25%;
     background-color: darkgray;
 }
 
