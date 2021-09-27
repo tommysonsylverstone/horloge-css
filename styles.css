@@ -7,7 +7,6 @@
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .rond {
@@ -16,7 +15,6 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-image: url("horloge-background.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -90,7 +88,7 @@
 
 .heure::before {
     content: '';
-    width: 25%;
+    width: 27%;
     height: 5px;
     display: block;
     position: absolute;
