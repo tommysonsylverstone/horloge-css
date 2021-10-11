@@ -6,11 +6,14 @@ var s = d.getSeconds();
 var m = d.getMinutes();
 var h = d.getHours();
 
-var sAngle = (s * 6) - 90
+var sAngle;
 //css style properties does not work with classname
-document.getElementById("seconde").style.transform = "rotate(" + sAngle + "deg)";
-//sHand.style.transform = "rotate(" + sAngle + "deg)";
-
 (h > 12) ? h = h - 12 : h = h;
 
-console.log(sAngle)
+setInterval(function() {
+    s = s + 1;
+    (s > 59) ? s = 0 : s = s;
+    sAngle = (s * 6) - 90
+    document.getElementById("seconde").style.transform = "rotate(" + sAngle + "deg)";
+    console.log(sAngle)
+}, 1000);
