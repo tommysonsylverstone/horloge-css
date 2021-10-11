@@ -36,5 +36,4 @@ setInterval(function () {
     }
     hAngle = hAngle + (360 / 43200) // converting ms in s, so 43200000ms = 43200s
     document.getElementById("heure").style.transform = "rotate(" + hAngle + "deg)";
-    console.log(hAngle)
 }, 1000);

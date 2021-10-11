@@ -36,12 +36,6 @@
     -moz-transform-origin: left;
     -webkit-transform-origin: left;
     transform-origin: left;
-    /*-moz-animation: 60s secondes infinite;
-    -webkit-animation: 60s secondes infinite;
-    animation: 60s secondes infinite;
-    -moz-animation-timing-function: steps(60, end);
-    -webkit-animation-timing-function: steps(60, end);
-    animation-timing-function: steps(60, end);*/
     position: absolute;
     left: 50%;
     top: 50%;
@@ -65,12 +59,6 @@
     -moz-transform-origin: left;
     -webkit-transform-origin: left;
     transform-origin: left;
-    /*-moz-animation: 3600s minutes infinite;
-    -webkit-animation: 3600s minutes infinite;
-    animation: 3600s minutes infinite;
-    -moz-animation-timing-function: steps(60, end);
-    -webkit-animation-timing-function: steps(60, end);
-    animation-timing-function: steps(60, end);*/
     position: absolute;
     left: 50%;
     top: 50%;
@@ -94,9 +82,6 @@
     -moz-transform-origin: left;
     -webkit-transform-origin: left;
     transform-origin: left;
-    /*-moz-animation: 43200s heures infinite linear; /*43200 for 12 hours *//*
-    -webkit-animation: 43200s heures infinite linear;
-    animation: 43200s heures infinite linear;*/
     position: absolute;
     left: 50%;
     top: 50%;
@@ -110,50 +95,4 @@
     position: absolute;
     left: -25%;
     background-color: darkgray;
-}
-
-
-@keyframes secondes {
-    0% {
-        -ms-transform: rotate(-90deg);      /* for IE 9 */
-        -moz-transform: rotate(-90deg);     /* for firefox 3.5 - 15 */
-        -webkit-transform: rotate(-90deg);  /* for chrome 4 - 35, safari 3.1 - 8, */
-        transform: rotate(-90deg);          /* opera 15 - 22, Safari & Chrome for iOs 3.2 - 8.4 */
-    }                                       /* and Android 2.1 - 4.4.4 browser */
-    100% {                                  
-        -ms-transform: rotate(270deg);
-        -moz-transform: rotate(270deg);
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-    }
-}
-
-@keyframes minutes {
-    0% {
-        -ms-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-    }
-    100% {
-        -ms-transform: rotate(270deg);
-        -moz-transform: rotate(270deg);
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-    }
-}
-
-@keyframes heures {
-    0% {
-        -ms-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-    }
-    100% {
-        -ms-transform: rotate(270deg);
-        -moz-transform: rotate(270deg);
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-    }
 }
