@@ -12,7 +12,7 @@ var hAngle;
 
 sAngle = (s * 6) - 90; // seconds starting at -90°
 mAngle = (m * 6) - 90;
-document.getElementById("seconde").style.transform = "rotate(" + sAngle + "deg)"
+document.getElementById("seconde").style.transform = "rotate(" + sAngle + "deg)";
 document.getElementById("minute").style.transform = "rotate(" + mAngle + "deg)";
 
 (h > 12) ? h = h - 12 : h = h; // 12 hours format
@@ -20,7 +20,10 @@ var hms = h * 3600000 // convert hours in milliseconds
 var mms = m * 60000 // convert minutes in ms
 var sms = s * 1000 //convert seconds in ms
 var timeInMilliseconds = hms + mms + sms;
-console.log(timeInMilliseconds)
+
+hAngle = (timeInMilliseconds * 0.000008333333333333333) - 90;
+document.getElementById("heure").style.transform = "rotate(" + hAngle + "deg)";
+
 
 setInterval(function () {
     s = s + 1;

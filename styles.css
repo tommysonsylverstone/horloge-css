@@ -94,9 +94,9 @@
     -moz-transform-origin: left;
     -webkit-transform-origin: left;
     transform-origin: left;
-    -moz-animation: 43200s heures infinite linear; /*43200 for 12 hours */
+    /*-moz-animation: 43200s heures infinite linear; /*43200 for 12 hours *//*
     -webkit-animation: 43200s heures infinite linear;
-    animation: 43200s heures infinite linear;
+    animation: 43200s heures infinite linear;*/
     position: absolute;
     left: 50%;
     top: 50%;
