@@ -11,6 +11,11 @@ var mAngle;
 
 (h > 12) ? h = h - 12 : h = h;
 
+sAngle = (s * 6) - 90; //seconds starting at -90°
+mAngle = (m * 6) - 90;
+document.getElementById("seconde").style.transform = "rotate(" + sAngle + "deg)"
+document.getElementById("minute").style.transform = "rotate(" + mAngle + "deg)";
+
 setInterval(function () {
     s = s + 1;
     (s > 59) ? s = 0 : s = s;
@@ -21,6 +26,5 @@ setInterval(function () {
         (m > 59) ? m = 0 : m = m;
         mAngle = (m * 6) - 90;
         document.getElementById("minute").style.transform = "rotate(" + mAngle + "deg)";
-        console.log(mAngle)
     }
 }, 1000);
