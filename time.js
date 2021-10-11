@@ -6,4 +6,6 @@ var s = d.getSeconds();
 var m = d.getMinutes();
 var h = d.getHours();
 
-console.log(s + " " + m + " " + h)
+(h > 12) ? h = h - 12 : h = h;
+
+console.log(h)
