@@ -20,10 +20,8 @@ var hms = h * 3600000 // convert hours in milliseconds
 var mms = m * 60000 // convert minutes in ms
 var sms = s * 1000 //convert seconds in ms
 var timeInMilliseconds = hms + mms + sms;
-
-hAngle = (timeInMilliseconds * 0.000008333333333333333) - 90;
+hAngle = (timeInMilliseconds * (360 / 43200000)) - 90; // 360 / 43200000 is the angle the hand goes each milliseconds
 document.getElementById("heure").style.transform = "rotate(" + hAngle + "deg)";
-
 
 setInterval(function () {
     s = s + 1;
@@ -36,4 +34,7 @@ setInterval(function () {
         mAngle = (m * 6) - 90;
         document.getElementById("minute").style.transform = "rotate(" + mAngle + "deg)";
     }
+    hAngle = hAngle + (360 / 43200) // converting ms in s, so 43200000ms = 43200s
+    document.getElementById("heure").style.transform = "rotate(" + hAngle + "deg)";
+    console.log(hAngle)
 }, 1000);
