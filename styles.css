@@ -65,12 +65,12 @@
     -moz-transform-origin: left;
     -webkit-transform-origin: left;
     transform-origin: left;
-    -moz-animation: 3600s minutes infinite;
+    /*-moz-animation: 3600s minutes infinite;
     -webkit-animation: 3600s minutes infinite;
     animation: 3600s minutes infinite;
     -moz-animation-timing-function: steps(60, end);
     -webkit-animation-timing-function: steps(60, end);
-    animation-timing-function: steps(60, end);
+    animation-timing-function: steps(60, end);*/
     position: absolute;
     left: 50%;
     top: 50%;
