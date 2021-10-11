@@ -2,4 +2,6 @@
 
 const d = new Date();
 
-console.log(d)
+var s = d.getSeconds();
+
+console.log(s)
