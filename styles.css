@@ -96,3 +96,57 @@
     left: -25%;
     background-color: darkgray;
 }
+
+span {
+    position: absolute;
+    background-color: aqua;
+    width: 47%;
+    left: 3%;
+    top: 40%;
+    transform-origin: right;
+    font-size: 3em;
+}
+
+.letter1 {
+    transform: rotate(120deg);
+}
+
+.letter2 {
+    transform: rotate(150deg);
+}
+
+.letter3 {
+    transform: rotate(180deg);
+}
+
+.letter4 {
+    transform: rotate(210deg);
+}
+
+.letter5 {
+    transform: rotate(240deg);
+}
+
+.letter6 {
+    transform: rotate(270deg);
+}
+
+.letter7 {
+    transform: rotate(300deg);
+}
+
+.letter8 {
+    transform: rotate(330deg);
+}
+
+.letter10 {
+    transform: rotate(30deg);
+}
+
+.letter11 {
+    transform: rotate(60deg);
+}
+
+.letter12 {
+    transform: rotate(90deg);
+}
