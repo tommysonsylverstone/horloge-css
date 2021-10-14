@@ -16,3 +16,4 @@ Quelques améliorations possibles:
 - [x] Remplacer l'image de fond par des chiffres directement en HTML/CSS/JS
 - [x] Rendre la longueur des aiguilles adaptable selon la taille de l'horloge
 - [x] Ajouter du javascript pour avoir l'heure exacte.
+- [ ] Remplacer les angles des chiffres en JS/SCSS
