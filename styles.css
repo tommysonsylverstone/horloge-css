@@ -99,15 +99,17 @@
 
 [class*="letter"] {
     position: absolute;
-    width: 47%;
-    left: 3%;
-    top: 40.5%;
+    width: 71%;
+    left: -26.5%;
+    top: 41.5%;
     transform-origin: right;
     font-size: 3em;
 }
 
 [class*="letter"] span {
     display: block;
+    transform-origin: 42% 53%;
+    text-align: center;
 }
 
 .letter1 {
@@ -115,7 +117,6 @@
 }
 
 .letter1 span {
-    transform-origin: 10% 46%;
     transform: rotate(-120deg);
 }
 
@@ -125,41 +126,76 @@
 
 .letter2 span{
     transform: rotate(-150deg);
-    transform-origin: 10% 46%;
 }
 
 .letter3 {
     transform: rotate(180deg);
 }
 
+.letter3 span {
+    transform: rotate(-180deg);
+}
+
 .letter4 {
     transform: rotate(210deg);
+}
+
+.letter4 span {
+    transform: rotate(-210deg);
 }
 
 .letter5 {
     transform: rotate(240deg);
 }
 
+.letter5 span {
+    transform: rotate(-240deg);
+}
+
 .letter6 {
     transform: rotate(270deg);
+}
+
+.letter6 span {
+    transform: rotate(-270deg);
 }
 
 .letter7 {
     transform: rotate(300deg);
 }
 
+.letter7 span {
+    transform: rotate(-300deg);
+}
+
 .letter8 {
     transform: rotate(330deg);
+}
+
+.letter8 span{
+    transform: rotate(-330deg);
 }
 
 .letter10 {
     transform: rotate(30deg);
 }
 
+.letter10 span {
+    transform: rotate(-30deg);
+}
+
 .letter11 {
     transform: rotate(60deg);
 }
 
+.letter11 span {
+    transform: rotate(-60deg);
+}
+
 .letter12 {
     transform: rotate(90deg);
+}
+
+.letter12 span{
+    transform: rotate(-90deg);
 }
