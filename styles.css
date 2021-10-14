@@ -97,22 +97,35 @@
     background-color: darkgray;
 }
 
-span {
+[class*="letter"] {
     position: absolute;
-    background-color: aqua;
     width: 47%;
     left: 3%;
-    top: 40%;
+    top: 40.5%;
     transform-origin: right;
     font-size: 3em;
+}
+
+[class*="letter"] span {
+    display: block;
 }
 
 .letter1 {
     transform: rotate(120deg);
 }
 
+.letter1 span {
+    transform-origin: 10% 46%;
+    transform: rotate(-120deg);
+}
+
 .letter2 {
     transform: rotate(150deg);
+}
+
+.letter2 span{
+    transform: rotate(-150deg);
+    transform-origin: 10% 46%;
 }
 
 .letter3 {
