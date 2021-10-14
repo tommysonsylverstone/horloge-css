@@ -15,9 +15,9 @@
     width: 300px;
     border: 2px solid black;
     border-radius: 50%;
-    background-image: url("horloge-background.jpg");
+    /*background-image: url("horloge-background.jpg");
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     position: relative;
 }
 
@@ -113,7 +113,7 @@
     -moz-transform-origin: 42% 53%;
     -webkit-transform-origin: 42% 53%;
     text-align: center;
-    font-size: min(15vw, 1em);
+    font-size: min(15vw, 1em); /* https://web.dev/min-max-clamp/ */
 }
 
 .letter1 {
