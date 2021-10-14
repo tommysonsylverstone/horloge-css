@@ -110,6 +110,7 @@
     display: block;
     transform-origin: 42% 53%;
     text-align: center;
+    font-size: min(15vw, 1em);
 }
 
 .letter1 {
